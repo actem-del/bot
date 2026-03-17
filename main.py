@@ -17,18 +17,18 @@ COGS = [
     "cogs.lavrooms",
 ]
 
-
 class DiscordBot(commands.Bot):
     def __init__(self) -> None:
-        settings = get_settings()
+        self.settings = get_settings()
+
         intents = discord.Intents.default()
         intents.message_content = True
         intents.members = True
         intents.voice_states = True
         intents.guilds = True
 
-        super().__init__(command_prefix=settings.prefix, intents=intents)
-        self.settings = settings
+        super().__init__(command_prefix=self.settings.prefix, intents=intents)
+
         self.users_db = JsonStore("data/users.json", default={})
         self.economy_db = JsonStore("data/economy.json", default={})
         self.voice_db = JsonStore("data/voice_time.json", default={})
