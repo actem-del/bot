@@ -2,6 +2,7 @@ import os
 
 print("TOKEN_RAW:", repr(os.environ.get("DISCORD_TOKEN")))
 print("ALL_ENV_HAS_TOKEN:", "DISCORD_TOKEN" in os.environ)
+print("TEST_VALUE:", repr(os.environ.get("TEST_VALUE")))
 import discord
 from discord.ext import commands
 
