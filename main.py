@@ -1,7 +1,7 @@
-from __future__ import annotations
-
 import os
 
+print("TOKEN_RAW:", repr(os.environ.get("DISCORD_TOKEN")))
+print("ALL_ENV_HAS_TOKEN:", "DISCORD_TOKEN" in os.environ)
 import discord
 from discord.ext import commands
 
