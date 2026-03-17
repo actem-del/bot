@@ -1,0 +1,52 @@
+{
+  "1309300595714293841": {
+    "1030943187587571802": {
+      "xp": 838,
+      "level": 3,
+      "messages": 6,
+      "coins": 1000000150,
+      "last_daily": "2026-03-16T20:39:22.421049+00:00",
+      "voice_seconds": 10292
+    },
+    "1155193131160043672": {
+      "xp": 1231,
+      "level": 4,
+      "messages": 96,
+      "coins": 1900000992103921,
+      "last_daily": "",
+      "voice_seconds": 0
+    },
+    "1310008427002593431": {
+      "xp": 338,
+      "level": 2,
+      "messages": 0,
+      "coins": 0,
+      "last_daily": "",
+      "voice_seconds": 4513
+    },
+    "1420196738647593093": {
+      "xp": 360,
+      "level": 2,
+      "messages": 0,
+      "coins": 0,
+      "last_daily": "",
+      "voice_seconds": 4809
+    },
+    "895655066516717568": {
+      "xp": 334,
+      "level": 2,
+      "messages": 0,
+      "coins": 0,
+      "last_daily": "",
+      "voice_seconds": 4487
+    },
+    "463320834958950401": {
+      "xp": 232,
+      "level": 2,
+      "messages": 0,
+      "coins": 0,
+      "last_daily": "",
+      "voice_seconds": 3073
+    }
+  }
+}
