@@ -7,15 +7,12 @@ from dataclasses import dataclass
 @dataclass
 class Settings:
     token: str
-    prefix: str = "!" 
+    prefix: str = "!"
     daily_reward: int = 100
 
 
 def get_settings() -> Settings:
     token = os.environ.get("DISCORD_TOKEN")
-    prefix = os.environ.get("BOT_PREFIX", "!")
-    daily_reward = int(os.environ.get("DAILY_REWARD", "100"))
-
     print("DISCORD_TOKEN exists:", bool(token))
 
     if not token:
@@ -23,6 +20,6 @@ def get_settings() -> Settings:
 
     return Settings(
         token=token,
-        prefix=prefix,
-        daily_reward=daily_reward,
+        prefix=os.environ.get("BOT_PREFIX", "!"),
+        daily_reward=int(os.environ.get("DAILY_REWARD", "100")),
     )
